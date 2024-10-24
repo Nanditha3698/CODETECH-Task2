@@ -1,91 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="calculator.css">
-    <title>calculator</title>
-</head>
-<body>
-    <div class="calciwrapper">
-        <section class="calciscreen">
-            0
-        </section>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
 
-        <section class="calci-buttons">
-            <div class="calci-button-row">
-                <button class="calci-button double">
-                    C            
-                </button>
-                <button class="calci-button">
-                    &larr;
-                </button>
-                <button class="calci-button">
-                    &divide;
-                </button>
-            </div>
+.cont{
+    width: 100%;
+    height: 100vh;
+    background: #e3f9ff;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-            <div class="calci-button-row">
-                <button class="calci-button">
-                    1
-                </button>
-                <button class="calci-button">
-                    2
-                </button>
-                <button class="calci-button">
-                    3
-                </button>
-                <button class="calci-button">
-                    &times;
-                </button>                
-            </div>
+.calculator{
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-            <div class="calci-button-row">
-                <button class="calci-button">
-                    4
-                </button>
-                <button class="calci-button">
-                    5
-                </button>
-                <button class="calci-button">
-                    6
-                </button>
-                <button class="calci-button">
-                    &minus;
-                </button>
-            </div>
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+    background:transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
 
-            <div class="calci-button-row">
-                <button class="calci-button">
-                    7
-                </button>
-                <button class="calci-button">
-                    8
-                </button>
-                <button class="calci-button">
-                    9
-                </button>
-                <button class="calci-button">
-                    &plus;
-                </button>
-            </div>
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
 
-            <div class="calci-button-row">
-                <button class="calci-button triple">
-                    0
-                </button>
-                <button class="calci-button">
-                    &equals;
-                </button>
-            </div>
-            
-        </section>
-    </div>
+form .display input{
+    text-align: end;
+    padding-right:10px;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
 
+form input.equal{
+    width: 145px;
+}
 
-    <script src="calculator.js"></script>
-    
-</body>
-</html>
-        
+form input.operator{
+    color: #33ffd8;
+}
